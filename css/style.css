@@ -17,7 +17,7 @@
   font-weight: 200;
   text-transform: uppercase;
   color: var  (--text-color);
-}
+
 
 .header_area .main-menu .navbar-nav .active a {
   background: var(--gradient-color);
