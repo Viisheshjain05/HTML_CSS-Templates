@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/*   COLOR SCHEME
+Steel Blue	#5c89ba	Primary
+Ebony Clay	#21283b	Info
+Fruit Salad	#51a470	Success
+Raw Sienna	#ce9438	Warning
+Pomegranate	#f44336	Danger */
+
+/* CSS Variables */
+:root {
+  --primary-color: #5c89ba; /*  Steel Blue */
+  --text-color: #21283b; /* Info|Text */
+  --roboto: "Roboto", cursive;
+  --gradient-color: linear-gradient(10deg, #4279d8 0%, #df7cc3 100%);
+}
