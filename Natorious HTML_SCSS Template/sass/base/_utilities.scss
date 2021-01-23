@@ -1,0 +1,35 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin: 6em;
+}
+
+.u-margin-bottom-small {
+  margin: 4em 3em 2.3em 3em;
+}
+
+.u-padding-top-small {
+  padding-top: .8em;
+  // margin-top: 1em;
+}
+
+.u-padding-top-extrasmall {
+  padding-top: .5em;
+  // margin-top: 1em;
+}
+
+.u-margin-bottom-normal {
+  margin: 4em 2em 2em 2em;
+}
+
+.u-margin-top-small {
+  transform: translateY(-5em);
+  margin-top: 1em;
+}
+
+// Use To remove front cover once when Css is loaded
+#u-loadOverlay {
+  display: none;
+}

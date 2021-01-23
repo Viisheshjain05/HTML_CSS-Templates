@@ -1,0 +1,60 @@
+.section-about {
+  margin-top: -20vh;
+  background-color: $color-light-grey-1;
+
+  // Just to prevent margin collapse
+  padding: 1px;
+}
+
+.section-features {
+  margin-top: -10.5vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  transform: skewY(-6deg);
+  padding: 5em;
+}
+
+.section-card {
+  margin-top: -11vh;
+  background-color: $color-light-grey-1;
+
+  // Just to prevent margin collapse
+  padding: 1em;
+}
+
+.section-story {
+  position: relative;
+  margin-top: -11vh;
+  // Just to prevent margin collapse
+  padding: 1em;
+}
+
+.section-book {
+  background-color: $color-primary-light;
+  padding: 8em 4em;
+}
+
+.book {
+  background-image: linear-gradient(
+      100deg,
+      rgba($color-light-grey-1, 0.9) 50%,
+      transparent 50%
+    ),
+    url("../img/nat-10.jpg");
+
+  border-radius: 3px;
+  box-shadow: 4px 2px 7px 0px black;
+  background-size: cover;
+  // padding: 12em 10em;
+  height: 29em;
+  &__form {
+    width: 50%;
+    height: inherit;
+  }
+}
+
