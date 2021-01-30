@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px
+}
+
+body {
+  font-weight: 400;
+  font-family: Raleway;
+  line-height: 1.6;
+  color: var(--color-grey-dark-3);
+}
