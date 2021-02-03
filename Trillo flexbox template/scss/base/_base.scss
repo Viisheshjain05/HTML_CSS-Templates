@@ -10,8 +10,24 @@ html {
 }
 
 body {
+  // display: flex;
   font-weight: 400;
   font-family: Raleway;
   line-height: 1.6;
   color: var(--color-grey-dark-3);
+
+  // For Browser support
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(var(--color-red-light)),
+    to(var(--color-red-dark))
+  );
+
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-red-light),
+    var(--color-red-dark)
+  );
 }

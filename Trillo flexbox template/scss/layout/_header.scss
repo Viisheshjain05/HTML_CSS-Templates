@@ -1,0 +1,90 @@
+// .header {
+// }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-logo {
+    padding: 1em;
+    align-self: center;
+
+    &__icon {
+      height: 4em;
+    }
+  }
+
+  &-search {
+    flex: 0 1 65em;
+    padding: 0 2em;
+    align-self: center;
+    text-align: center;
+    position: relative;
+
+    &__text {
+      border-radius: 30px;
+      background-color: var(--color-grey-light-4);
+      border: none;
+      font-size: large;
+      width: 90%;
+      min-width: 200px;
+      padding: 0.7em 1.2em;
+      transition: all 0.3s;
+
+      &::-webkit-input-placeholder {
+        color: var(--color-grey-dark-1);
+        text-transform: capitalize;
+      }
+
+      &:focus {
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    &__img {
+      padding: 0.5em;
+      position: absolute;
+      transform: translateX(-5em);
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    &__msg {
+      transform: translate(14px, 9px);
+      background-color: orangered;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+    }
+
+    &__img {
+      height: 2.5em;
+    }
+
+    &__icon {
+      flex: 1;
+      margin: 1.5em 2em;
+      cursor: pointer;
+    }
+    &__user {
+      padding: 0.4em;
+      display: flex;
+      cursor: pointer;
+      &--icon {
+        height: 5em;
+        border-radius: 50%;
+      }
+
+      &--name {
+        font-size: 1.2em;
+        padding: 0.4em;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

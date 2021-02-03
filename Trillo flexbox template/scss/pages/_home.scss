@@ -1,0 +1,9 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 87vw;
+  height: 100vh;
+
+  background-color: var(--color-white);
+  margin: 9em auto;
+}
