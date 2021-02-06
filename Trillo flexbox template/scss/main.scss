@@ -6,12 +6,20 @@
 // * Base
 @import "./base/base";
 @import "./base/utilities";
+@import "./base/animations";
 
 // * pages
 @import "./pages/home";
 
 // * layouts
 @import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/hotel-view";
+
+// * components
+@import "./components/svg";
+
+
 
 // @import "./abstract/variables";
 // @import "./abstract/functions";

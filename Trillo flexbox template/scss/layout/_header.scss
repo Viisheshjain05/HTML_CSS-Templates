@@ -74,9 +74,13 @@
       padding: 0.4em;
       display: flex;
       cursor: pointer;
+
       &--icon {
         height: 5em;
-        border-radius: 50%;
+        width: 5em;
+        border: 1px solid black;
+        background: center / cover url("../img/png/user-Vii.jpg") no-repeat;
+        border-radius: 100%;
       }
 
       &--name {

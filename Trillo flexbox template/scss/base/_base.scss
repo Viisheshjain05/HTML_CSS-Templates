@@ -15,7 +15,8 @@ body {
   font-family: Raleway;
   line-height: 1.6;
   color: var(--color-grey-dark-3);
-
+  margin: 0;
+  padding: 0;
   // For Browser support
   background-image: -webkit-gradient(
     linear,
@@ -30,4 +31,13 @@ body {
     var(--color-red-light),
     var(--color-red-dark)
   );
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
 }

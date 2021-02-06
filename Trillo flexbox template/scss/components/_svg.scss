@@ -1,0 +1,18 @@
+.svg {
+  &--hotel {
+    background: center / contain url("../img/svg/hotel.svg") no-repeat;
+  }
+
+  &--feature {
+    background: center / contain url("../img/svg/aircraft-take-off.svg")
+      no-repeat;
+  }
+
+  &--car {
+    background: center / contain url("../img/svg/car.svg") no-repeat;
+  }
+
+  &--travelling {
+    background: center / contain url("../img/svg/travelling.svg") no-repeat;
+  }
+}

@@ -1,9 +1,25 @@
-.body-container {
+.container {
   display: flex;
   flex-direction: column;
-  width: 87vw;
+  max-width: 120rem;
+  // width: 87vw;
   height: 100vh;
 
   background-color: var(--color-white);
   margin: 9em auto;
+
+}
+
+@media only screen and (max-width: 75em){
+
+  .container{
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+
+.main-container {
+  display: flex;
+  height: 100%;
 }
