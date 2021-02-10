@@ -14,12 +14,14 @@
 // * layouts
 @import "./layout/header";
 @import "./layout/sidebar";
-@import "./layout/hotel-view";
 
 // * components
 @import "./components/svg";
+@import "./components/imgGallery";
+@import "./components/hotelOverview";
 
-
+// * Vender
+@import "./vendor/imgScroller";
 
 // @import "./abstract/variables";
 // @import "./abstract/functions";
