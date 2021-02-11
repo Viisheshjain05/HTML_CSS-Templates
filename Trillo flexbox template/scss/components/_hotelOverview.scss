@@ -28,7 +28,9 @@
   &__location {
     margin-left: auto;
     margin-right: 1.5em;
+
     &--link {
+      text-transform: capitalize;
       color: red;
       font-size: var(--default-font-size);
       padding-bottom: 0.2em;

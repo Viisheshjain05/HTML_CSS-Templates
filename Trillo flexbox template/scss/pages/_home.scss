@@ -3,7 +3,6 @@
   flex-direction: column;
   max-width: 120rem;
   // width: 87vw;
-  height: 200vh;
 
   background-color: var(--color-white);
   margin: 9em auto;
@@ -17,13 +16,13 @@
   }
 }
 
-
 .main-container {
   display: flex;
   height: 100%;
+  background-color: var(--color-black);
 }
 
 .hotel-view {
   flex: 10;
+  background-color: var(--color-grey-light-2);
 }
-

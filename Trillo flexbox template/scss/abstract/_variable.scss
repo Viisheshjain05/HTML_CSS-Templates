@@ -21,9 +21,9 @@
   --color-blue-dark: #5643fa;
 
   //? GREY SHADES
-  --color-grey-light-1: #f4f2f2;
-  --color-grey-light-2: #faf9f9;
-  --color-grey-light-3: #f7f7f7; 
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f7f7f7;
+  --color-grey-light-3: #f4f2f2;
   --color-grey-light-4: #eee;
   --color-grey-light-5: #f0eeee;
   --color-grey-light-6: #ccc;
@@ -41,8 +41,10 @@
   //! ****************** FONT ******************
   --default-font-size: 1.5rem; // when font size 10px
 
-  //! ****************** SHADOWS ******************
+  //! ****************** BORDER ******************
+  --line: 1px solid rgba(77, 77, 77, 0.1);
 
+  //! ****************** SHADOWS ******************
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 }
