@@ -1,0 +1,16 @@
+.user-review {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 auto;
+  margin: 3em;
+  font-size: 1.5em;
+}
+.review {
+  padding: 2em;
+  background-color: white;
+
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+}
