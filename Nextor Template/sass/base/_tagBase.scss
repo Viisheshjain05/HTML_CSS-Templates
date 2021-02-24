@@ -1,3 +1,11 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
 //? BASE COMPONENT PARAMS
 
 // font
@@ -16,7 +24,8 @@ $color-text: #363946;
 $input-lightblue-border: 1px solid $color-royalBlue;
 $border-transparent: 1px solid transparent;
 
-// BASE COMPONENT
+// ------------------------ BASE COMPONENT START ------------------------
+
 button {
   // Typography
   font-size: $default-font-size;
@@ -68,3 +77,5 @@ input {
   margin-right: 0;
   font-weight: bold;
 }
+
+// ------------------------ BASE COMPONENT END ------------------------

@@ -1,7 +1,7 @@
 
 {
   "name": "sassypro",
-  "version": "1.2.5",
+  "version": "1.2.7",
   "description": " Maintain package and update as per version and create robost easy to use scss styles ",
   "main": "index.js",
   "scripts": {
