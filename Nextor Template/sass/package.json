@@ -1,42 +1,17 @@
+
 {
-  "_from": "sassypro",
-  "_id": "sassypro@1.2.4",
-  "_inBundle": false,
-  "_integrity": "sha512-7UDiHxrfXF9NJ53qYeNm2N1BsV/A9qgVVrdAw5Kq7XS/hP07iKc2GefXq7+7BAzko5O1EocV+oBRHNfnE7tBRw==",
-  "_location": "/sassypro",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "sassypro",
-    "name": "sassypro",
-    "escapedName": "sassypro",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/sassypro/-/sassypro-1.2.4.tgz",
-  "_shasum": "26ae82a005f58ebb4964213592666a49f7ddab04",
-  "_spec": "sassypro",
-  "_where": "C:\\Users\\VIISHESH\\Desktop\\_GitHub Repos\\HTML_CSS-Templates\\Nextor Template",
-  "author": "",
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "sassypro",
+  "version": "1.2.5",
   "description": " Maintain package and update as per version and create robost easy to use scss styles ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "sass",
     "css",
     "pre-build styles"
   ],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "sassypro",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.2.4"
+  "author": "",
+  "license": "ISC"
 }

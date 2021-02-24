@@ -18,6 +18,7 @@
 @import "./components/flex";
 @import "./components/input";
 @import "./components/modal";
+@import "./components/grid";
 // @import "./components/SVGs/svg";
 
 // * layouts
@@ -28,10 +29,10 @@
 
 // * Theme
 // Files Specific To certain Projects || Not Relevent in other projects
-@import "./theme/TodoProjectSepecific";
+@import "./theme/themeMain";
 
 // * Vendors
-@import "./vendor/VendorMain";
+@import "./vendor/vendorMain";
 
 //
 //

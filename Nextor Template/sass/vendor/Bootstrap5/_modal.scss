@@ -2,8 +2,7 @@
 // .modal           - container to scroll within
 // .modal-dialog    - positioning shell for the actual modal
 // .modal-content   - actual modal w/ bg and corners and stuff
-@import "./variables";
-// @import "./mixins";
+
 
 .modal-open {
   // Kill the scroll on the body
@@ -43,7 +42,7 @@
 
   // When fading in the modal, animate it to slide down
   .modal.fade & {
-    // @include transition($modal-transition);
+    @include transition($modal-transition);
     transform: $modal-fade-transform;
   }
   .modal.show & {
@@ -87,8 +86,8 @@
   background-color: $modal-content-bg;
   background-clip: padding-box;
   border: $modal-content-border-width solid $modal-content-border-color;
-  // @include border-radius($modal-content-border-radius);
-  // @include box-shadow($modal-content-box-shadow-xs);
+  @include border-radius($modal-content-border-radius);
+  @include box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
   outline: 0;
 }
@@ -104,12 +103,8 @@
   background-color: $modal-backdrop-bg;
 
   // Fade for backdrop
-  &.fade {
-    opacity: 0;
-  }
-  &.show {
-    opacity: $modal-backdrop-opacity;
-  }
+  &.fade { opacity: 0; }
+  &.show { opacity: $modal-backdrop-opacity; }
 }
 
 // Modal header
@@ -121,12 +116,11 @@
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
-  // @include border-top-radius($modal-content-inner-border-radius);
+  @include border-top-radius($modal-content-inner-border-radius);
 
   .btn-close {
     padding: ($modal-header-padding-y / 2) ($modal-header-padding-x / 2);
-    margin: ($modal-header-padding-y / -2) ($modal-header-padding-x / -2)
-      ($modal-header-padding-y / -2) auto;
+    margin: ($modal-header-padding-y / -2) ($modal-header-padding-x / -2) ($modal-header-padding-y / -2) auto;
   }
 }
 
@@ -153,9 +147,9 @@
   flex-shrink: 0;
   align-items: center; // vertically center
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
-  // padding: $modal-inner-padding - $modal-footer-margin-between / 2;
+  padding: $modal-inner-padding - $modal-footer-margin-between / 2;
   border-top: $modal-footer-border-width solid $modal-footer-border-color;
-  // @include border-bottom-radius($modal-content-inner-border-radius);
+  @include border-bottom-radius($modal-content-inner-border-radius);
 
   // Place margin between footer elements
   // This solution is far from ideal because of the universal selector usage,
@@ -175,71 +169,67 @@
 }
 
 // Scale up the modal
-// @include media-breakpoint-up(sm) {
-//   // Automatically set modal's width for larger viewports
-//   .modal-dialog {
-//     max-width: $modal-md;
-//     margin: $modal-dialog-margin-y-sm-up auto;
-//   }
+@include media-breakpoint-up(sm) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    max-width: $modal-md;
+    margin: $modal-dialog-margin-y-sm-up auto;
+  }
 
-//   .modal-dialog-scrollable {
-//     height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
-//   }
+  .modal-dialog-scrollable {
+    height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+  }
 
-//   .modal-dialog-centered {
-//     min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
-//   }
+  .modal-dialog-centered {
+    min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+  }
 
-//   // .modal-content {
-//   //   // @include box-shadow($modal-content-box-shadow-sm-up);
-//   // }
+  .modal-content {
+    @include box-shadow($modal-content-box-shadow-sm-up);
+  }
 
-//   .modal-sm {
-//     max-width: $modal-sm;
-//   }
-// }
+  .modal-sm { max-width: $modal-sm; }
+}
 
-// @include media-breakpoint-up(lg) {
-//   .modal-lg,
-//   .modal-xl {
-//     max-width: $modal-lg;
-//   }
-// }
+@include media-breakpoint-up(lg) {
+  .modal-lg,
+  .modal-xl {
+    max-width: $modal-lg;
+  }
+}
 
-// // @include media-breakpoint-up(xl) {
-//   .modal-xl {
-//     max-width: $modal-xl;
-//   }
-// }
+@include media-breakpoint-up(xl) {
+  .modal-xl { max-width: $modal-xl; }
+}
 
-// @each $breakpoint in map-keys($grid-breakpoints) {
-//   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-//   $postfix: if($infix != "", $infix + "-down", "");
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  $postfix: if($infix != "", $infix + "-down", "");
 
-//   // @include media-breakpoint-down($breakpoint) {
-//     .modal-fullscreen#{$postfix} {
-//       width: 100vw;
-//       max-width: none;
-//       height: 100%;
-//       margin: 0;
+  @include media-breakpoint-down($breakpoint) {
+    .modal-fullscreen#{$postfix} {
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      margin: 0;
 
-//       .modal-content {
-//         height: 100%;
-//         border: 0;
-//         // @include border-radius(0);
-//       }
+      .modal-content {
+        height: 100%;
+        border: 0;
+        @include border-radius(0);
+      }
 
-//       // .modal-header {
-//       //   // @include border-radius(0);
-//       // }
+      .modal-header {
+        @include border-radius(0);
+      }
 
-//       .modal-body {
-//         overflow-y: auto;
-//       }
+      .modal-body {
+        overflow-y: auto;
+      }
 
-//       .modal-footer {
-//         // @include border-radius(0);
-//       }
-//     }
-//   }
-// }
+      .modal-footer {
+        @include border-radius(0);
+      }
+    }
+  }
+}
